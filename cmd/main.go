@@ -26,6 +26,7 @@ func main() {
 
 	go func() {
 		<-shutdown
+		fmt.Println("\nShutting down server...")
 		timeout, cancelFunc := context.WithTimeout(context.Background(), 5*time.Second)
 		defer cancelFunc()
 
