@@ -2,7 +2,10 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 
 go_library(
     name = "pkg",
-    srcs = ["sum.go"],
+    srcs = [
+        "handler.go",
+        "sum.go",
+    ],
     importpath = "github.com/ninadingole/bazel-for-go/pkg",
     visibility = ["//visibility:public"],
 )
