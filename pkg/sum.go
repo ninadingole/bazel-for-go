@@ -1,4 +1,4 @@
-package bazel_for_go
+package pkg
 
 func Sum(a, b int) int {
 	return a + b
